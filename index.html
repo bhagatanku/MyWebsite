@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>BookMyShow</title>
+    <link rel="icon" type="image/x-icon" href="img/fav.png">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <link rel="stylesheet" href="style.css">
+
+
+
+    <!-- <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> -->
+</head>
+
+<body>
+
+    <!-- Wrapper -->
+    <div class="wrapper">
+
+        <!-- Sidebar -->
+        <nav class="sidebar">
+
+            <nav class="sidenavbar">
+                <h1>Hey!</h1>
+            </nav>
+
+            <nav class="sidesubnavbar">
+                <img src="img/rewards.webp">
+                <p>Unlock special offers & great benifits</p>
+                <button class="login" onclick="document.getElementById('id01').style.display='block'">Login / Register</button>
+            </nav>
+
+            <a href="#">
+                <div class="lefticon">
+                    <ion-icon name="notifications-outline"></ion-icon>
+                </div>
+                <div class="text">Notifications</div>
+                <div class="righticon">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </div>
+            </a>
+            <a class="btn-disabled" href="#">
+                <div class="lefticon">
+                    <ion-icon name="ticket-outline"></ion-icon>
+                </div>
+                <div class="text">Purchase History<br>
+                    <div class="subtext">View all your bookings & Purchases</div>
+                </div>
+                <div class="righticon">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                </div>
+            </a>
+            <a class="btn-disabled" href="#">
+                <div class="lefticon">
+                    <ion-icon name="tv-outline"></ion-icon>
+                </div>
+                <div class="text">Stream Library<br>
+                    <div class="subtext">Rented & Purchased Movies</div>
+                </div>
+                <div class="righticon">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                </div>
+            </a>
+            <a href="#">
+                <div class="lefticon">
+                    <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                </div>
+                <div class="text">Help & Support<br>
+                    <div class="subtext">View commonly asked queries and Chat</div>
+                </div>
+                <div class="righticon">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </div>
+            </a>
+            <a class="btn-disabled" href="#">
+                <div class="lefticon">
+                    <ion-icon name="settings-outline"></ion-icon>
+                </div>
+                <div class="text">Accounts & Settings<br>
+                    <div class="subtext">Location, Payments, Addresses & More</div>
+                </div>
+                <div class="righticon">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                </div>
+            </a>
+            <a href="#">
+                <div class="lefticon">
+                    <ion-icon name="gift-outline"></ion-icon>
+                </div>
+                <div class="text">Rewards<br>
+                    <div class="subtext">View your rewards & unlock new ones</div>
+                </div>
+                <div class="righticon">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </div>
+            </a>
+            <a href="#">
+                <div class="lefticon">
+                    <ion-icon name="heart-outline"></ion-icon>
+                </div>
+                <div class="text">BookASmile</div>
+                <div class="righticon">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </div>
+            </a>
+
+        </nav>
+        <!-- End sidebar -->
+
+        <!-- Dark overlay -->
+        <div class="overlay"></div>
+
+        <!-- Content -->
+        <div class="content">
+
+            <nav class="navbar">
+                <img src="img/logo.png" class="brand-logo" alt="" />
+                <div class='input'>
+                    <ion-icon name="search"></ion-icon>
+                    <input className='search'
+                        placeholder='Search for Movies, Events, Plays, Sports, and Activities'></input>
+                </div>
+                <div class="right-container">
+                    <a href="#" class="location">Nagpur<ion-icon name="caret-down-sharp"></ion-icon></a>
+                    <button class="signin"
+                        onclick="document.getElementById('id01').style.display='block'">Sign in</button>
+
+                    <div id="id01" class="modal">
+
+                        <div class="modal-content">
+                            <div class="getstart">
+                                <h3>Get Started</h3>
+                                <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                                    title="Close Modal">
+                                    <ion-icon name="close-outline"></ion-icon>
+                                </span>
+                            </div>
+
+                            <div class="container">
+                                <a href="#" class="button">
+                                    <div class="logo">
+                                        <img src="img/googlelogo.svg">
+                                    </div>
+                                    <div class="text">Continue with Google</div>
+                                </a>
+                                <a href="index4.html" class="button">
+                                    <div class="logo">
+                                        <ion-icon name="mail-outline" style="font-size: 22px;"></ion-icon>
+                                    </div>
+                                    <div class="text">Continue with Email</div>
+                                </a>
+                                <a href="#" class="button">
+                                    <div class="logo">
+                                        <ion-icon name="logo-apple" style="font-size: 22px;"></ion-icon>
+                                    </div>
+                                    <div class="text">Continue with Apple</div>
+                                </a>
+                            </div>
+                            <h2>OR</h2>
+
+                            <div class="phone">
+                                <img alt="indian flag" src="img/indianflag.svg">
+                                <div class="code">+91</div>
+                                <input id="mobileNo" type="tel" pattern="[0-9]*"
+                                    placeholder="Continue with mobile number" class="mobileNo">
+                            </div>
+
+                            <p>I agree to the <u>Terms & Conditions</u>&<u>Privacy Policy</u></p>
+
+                        </div>
+
+                    </div>
+
+                    <a href="#" class="btn-customized open-menu">
+                        <ion-icon name="menu-outline"></ion-icon>
+                    </a>
+                </div>
+            </nav>
+
+            <nav class="subnavbar">
+                <ul class='navitem'>
+                    <li><a href='#Movies'>Movies</a></li>
+                    <li><a href='#Stream'>Stream<span>NEW</span></a></li>
+                    <li><a href='#Events'>Events</a></li>
+                    <li><a href='#Plays'>Plays</a></li>
+                    <li><a href='#Sports'>Sports</a></li>
+                    <li><a href='#Activities'>Activities</a></li>
+                    <li><a href='#Buzz'>Buzz</a></li>
+                </ul>
+                <ul class='navitem1'>
+                    <li><a href='#Movies'>ListYourShow<span>NEW</span></a></li>
+                    <li><a href='#Movies'>Corporates</a></li>
+                    <li><a href='#Movies'>Offers</a></li>
+                    <li><a href='#Movies'>Gift Cards</a></li>
+                </ul>
+            </nav>
+
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="slider">
+                    <img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1717080055549_playcardweb.jpg" alt="">
+                    <img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1722839066478_tlpbms1240x300.jpg" alt="">
+                    <img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1722935655122_monsoonpccweb.jpg" alt="">
+                    <img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1723614074191_freeacceswebweeklystream.jpg" alt="">
+                </div>
+
+                </div>
+            </div>
+
+            <script src="js/data.js"></script>
+            <script src="js/app.js"></script>
+
+            <h1 class="title">Recommended Movies</h1>
+            <div class="movies-list">
+                <div class="card-container">
+
+                    <div class="movie">
+                        <div class="card">
+                            <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/gharat-ganpati-et00399543-1716815492.jpg" class="card-img" alt="">
+                            <div class="card-body">
+                                <ion-icon name="Star"></ion-icon>
+                                <p>9.3/10 &ThinSpace; 748 votes</p>
+                            </div>
+                        </div>
+                        <h3>Gharat Ganpati</h3>
+                        <p class="detail">Comedy,Drama,Family</p>
+                    </div>
+
+                    <div class="movie">
+                        <div class="card">
+                            <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/deadpool-and-wolverine-et00341295-1718018322.jpg" class="card-img" alt="">
+                            <div class="card-body">
+                                <ion-icon name="Star"></ion-icon>
+                                <p>8.9/10 &ThinSpace; 36k votes</p>
+                            </div>
+                        </div>
+                        <h3>Deadpool & Wolverine</h3>
+                        <p class="detail">Action,Adventure,Comedy</p>
+                    </div>
+
+                    <div class="movie">
+                        <div class="card">
+                            <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/bad-newz-et00391805-1721214274.jpg" class="card-img" alt="">
+                            <div class="card-body">
+                                <ion-icon name="Star"></ion-icon>
+                                <p>6.2/10 &ThinSpace; 52.5K votes</p>
+                            </div>
+                        </div>
+                        <h3>Bad Newz</h3>
+                        <p class="detail">Comedy,Drama</p>
+                    </div>
+
+                    <div class="movie">
+                        <div class="card">
+                            <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/kalki-2898-ad-et00352941-1718275859.jpg" class="card-img" alt="">
+                            <div class="card-body">
+                                <ion-icon name="Star"></ion-icon>
+                                <p>8.6/10 &ThinSpace; 695.5K votes</p>
+                            </div>
+                        </div>
+                        <h3>Kalki 2898 AD</h3>
+                        <p class="detail">Action,Sci-Fi,Thriller</p>
+                    </div>
+
+                    <div class="movie">
+                        <div class="card">
+                            <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/sarfira-et00387250-1720677970.jpg" class="card-img" alt="">
+                            <div class="card-body">
+                                <ion-icon name="Star"></ion-icon>
+                                <p>8.7/10 &ThinSpace; 33.1K votes</p>
+                            </div>
+                        </div>
+                        <h3>Sarfira</h3>
+                        <p class="detail">Biography,Drama</p>
+                    </div>
+
+                    <div class="movie">
+                        <div class="card">
+                            <img src="img/poster/poster6.jpg" class="card-img" alt="">
+                            <div class="card-body">
+                                <ion-icon name="Star"></ion-icon>
+                                <p>9.2/10 &ThinSpace; 120k votes</p>
+                            </div>
+                        </div>
+                        <h3>Sita Ramam</h3>
+                        <p class="detail">Action/Drama/Romantic</p>
+                    </div>
+
+                    <div class="movie">
+                        <div class="card">
+                            <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/maharaja-hindi-et00402946-1719504211.jpg" class="card-img" alt="">
+                            <div class="card-body">
+                                <ion-icon name="Star" style="color: red;"></ion-icon>
+                                <p>9.6/10 &ThinSpace; 4.9K Votes</p>
+                            </div>
+                        </div>
+                        <h3>Maharaja(Hindi)</h3>
+                        <p class="detail">Action,Drama</p>
+                    </div>
+
+                    <div class="movie">
+                        <div class="card">
+                            <img src="img/poster/poster8.jpg" class="card-img" alt="">
+                            <div class="card-body">
+                                <ion-icon name="heart-sharp"></ion-icon>
+                                <p>8.4/10 &ThinSpace; 1K votes</p>
+                            </div>
+                        </div>
+                        <h3>Peace</h3>
+                        <p class="detail">Comedy/Drama/Thriller</p>
+                    </div>
+
+                    <div class="movie">
+                        <div class="card">
+                            <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/baii-ga-et00400710-1717673217.jpg" class="card-img" alt="">
+                            <div class="card-body">
+                                <ion-icon name="Star" style="color:red;"></ion-icon>
+                                <p>7.1/10 &ThinSpace; 823 Votes</p>
+                            </div>
+                        </div>
+                        <h3>Beyond The 7 Seas</h3>
+                        <p class="detail">Drama/Fantasy/Thriller</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="strip">
+                <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120/stream-leadin-web-collection-202210241242.png" style="height:105px;" alt="">
+            </div>
+
+            <h1 class="title-enter">The Best of Entertainment</h1>
+            <div class="enter-list">
+                <div class="enter-container">
+
+                    <div class="card">
+                        <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MyBFdmVudHM%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/bmshp-desktop-amusement-park-collection-202404190106.png" class="card-img" alt="">
+                    </div>
+
+                    <div class="card">
+                        <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-OSBFdmVudHM%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/workshop-and-more-web-collection-202211140440.png" class="card-img" alt="">
+                    </div>
+
+                    <div class="card">
+                        <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-NCBFdmVudHM%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/bmshp-desktop-kids-collection-202404190106.png" class="card-img" alt="">
+                    </div>
+
+                    <div class="card">
+                        <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MTArIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/comedy-shows-collection-202211140440.png" class="card-img" alt="">
+                    </div>
+
+                    <div class="card">
+                        <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MTArIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/music-shows-collection-202211140440.png" class="card-img" alt="">
+                    </div>
+
+                    <div class="card">
+                        <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-NSBFdmVudHM%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/arts-crafts-collection-202211140440.png" class="card-img" alt="">
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- End content -->
+
+    </div>
+    <!-- End wrapper -->
+
+</body>
+
+</html>
